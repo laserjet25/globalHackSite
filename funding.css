@@ -1,0 +1,39 @@
+
+  body{color: white;
+background-color: lightgray;
+padding: 2px 2px 2px 2px;}
+
+        .mid {
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+  ul {
+            list-style-type: none;
+            margin: 0;
+            padding-bottom: 0;
+            overflow: hidden;
+            background-color: maroon;
+
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+ .fi {text-align: center;
+     font-size: 16pt;
+ color: maroon;
+ font-weight: bold;}
+ 

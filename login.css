@@ -1,0 +1,89 @@
+
+ body{color: white;
+background-color: lightgray;
+padding: 2px 2px 2px 2px;}
+
+        .mid {
+            text-align: center;
+            padding-bottom: 10px;
+        }
+
+  ul {
+            list-style-type: none;
+            margin: 0;
+            padding-bottom: 0;
+            overflow: hidden;
+            background-color: maroon;
+
+        }
+
+        li {
+            float: left;
+        }
+
+        li a {
+            display: block;
+            color: white;
+            text-align: center;
+            padding: 14px 16px;
+            text-decoration: none;
+        }
+
+        li a:hover {
+            background-color: #111;
+        }
+        
+        .container1 {text-align: center;
+            padding-right: 400px;
+        }
+        
+        button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 13px 50px;
+    margin: 8px 0;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+                }
+        .slideshow-container    {float: right;}
+
+
+
+/* The dots/bullets/indicators */
+.dot {
+  height: 15px;
+  width: 15px;
+  margin: 0 2px;
+  background-color: #bbb;
+  border-radius: 100%;
+  display: inline-block;
+  transition: background-color 0.6s ease;
+}
+
+.active {
+  background-color: #333;
+}
+
+/* Fading animation */
+.fade {
+  -webkit-animation-name: fade;
+  -webkit-animation-duration: 0.1s;
+  animation-name: fade;
+  animation-duration: 0.1s;
+}
+
+@-webkit-keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+@keyframes fade {
+  from {opacity: .4} 
+  to {opacity: 1}
+}
+
+/* On smaller screens, decrease text size */
+@media only screen and (max-width: 2000px) {
+  .text {font-size: 11px}
+}

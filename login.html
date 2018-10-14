@@ -1,0 +1,101 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <link rel="icon" type="image/gif/png" href="pics/icon.png">
+    <link rel="stylesheet" type="text/css" href="login.css">
+    <meta charset="UTF-8">
+
+    <title>Newcommer Career Discover</title>
+</head>
+
+<body>
+
+    <div class="mid">
+        <img src="pics/Logo.png" alt="Logo" height="190px" width="300px">
+    </div>
+
+    <ul>
+        <li><a class="active" href="index.html">Home</a></li>
+        <li><a href="login.html">Login</a></li>
+        <li><a href="signup.html">Looking for a Job?</a></li>
+        <li><a href="funding.html">Looking for Funding?</a></li>
+        <li><a href="business.html">Looking for Employees?</a></li>
+        <!-- <li><a href="about.html">About</a></li> -->
+        <li><a href="contact.html">Contact</a></li>
+
+    </ul>
+
+    <br />
+    </div>
+
+    <div class="slideshow-container">
+
+        <div class="mySlides fade">
+
+            <img src="pics/slide1.jpg" style="width:500px;height: 300px">
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="pics/slide2.jpg" style="width:500px;height: 300px">
+
+        </div>
+
+        <div class="mySlides fade">
+
+            <img src="pics/slide3.jpg" style="width:500px;height: 300px">
+
+        </div>
+
+        <br>
+
+        <div style="text-align:center">
+            <span class="dot"></span>
+            <span class="dot"></span>
+            <span class="dot"></span>
+        </div>
+
+        <script>
+            var slideIndex = 0;
+            showSlides();
+
+            function showSlides() {
+                var i;
+                var slides = document.getElementsByClassName("mySlides");
+                var dots = document.getElementsByClassName("dot");
+                for (i = 0; i < slides.length; i++) {
+                    slides[i].style.display = "none";
+                }
+                slideIndex++;
+                if (slideIndex > slides.length) {
+                    slideIndex = 1
+                }
+                for (i = 0; i < dots.length; i++) {
+                    dots[i].className = dots[i].className.replace(" active", "");
+                }
+                slides[slideIndex - 1].style.display = "block";
+                dots[slideIndex - 1].className += " active";
+                setTimeout(showSlides, 5000);
+            }
+        </script>
+    </div>
+    <div class="container1">
+        <br />
+        <img src="pics/userpic.png" alt="user" height="150px" style="padding-left: 7%;">
+        <br />
+        <br />
+        <label for="uname"><b>Username</b></label>
+        <input type="text" placeholder="Enter Username" name="uname" required>
+        <br />
+        <br />
+        <label><b>Password</b></label>
+        <input type="text" placeholder="Enter Password" name="password" required>
+        <p><a href="Cancle">Forgot password?</a></p>
+
+        <button onclick="location.href='logged.html'" type="button">Login</button>
+        <button onclick="document.getElementById('id01').style.display='block'" style="background-color: red; width:auto;">Signup</button>
+    </div>
+</body>
+
+</html>
